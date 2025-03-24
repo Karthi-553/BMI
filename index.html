@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <label for="height">Enter your height:</label>
+        <input type="number" name="height" id="height" required />
+        <br />
+        <label for="height_units">Enter the units:</label>
+        <select name="height_units" id="height_units" required>
+          <option value="">--Select--</option>
+          <option value="cm">cm</option>
+          <option value="m">meter</option>
+        </select>
+        <br />
+        <label for="weight">Enter your Weight:</label>
+        <input type="number" name="weight" id="weight" required />
+        <br />
+        <label for="weight_units">Enter the units:</label>
+        <select name="weight_units" id="weight_units" required>
+          <option value="">--Select--</option>
+          <option value="kg">Kilogram</option>
+          <option value="pounds">pound</option>
+        </select>
+        <br />
+        <input
+          type="submit"
+          id="calculate"
+          value="calculate"
+          onclick="calculate()"
+          required
+        />
+        <div>
+          <p id="result"></p>
+        </div>
+      </div>
+      <div class="instructions">
+        <!-- Interpret your BMI: Underweight: Below 18.5. Healthy Weight: 18.5 to 24.9.
+      Overweight: 25 to 29.9. Obesity: 30 or greater. -->
+
+        <h2>Interpret your BMI:</h2>
+        <p><b>Underweight: </b>Below 18.5.</p>
+        <p><b>Healthy Weight:</b>18.5 to 24.9</p>
+        <p><b>Overweight:</b>25 to 29.9</p>
+        <p><b>Obesity:</b>30 or greater</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
